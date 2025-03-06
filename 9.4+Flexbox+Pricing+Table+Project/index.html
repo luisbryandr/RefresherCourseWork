@@ -18,13 +18,33 @@
         padding: 10%;
         display: flex;
         justify-content: space-around;
+        /* flex-basis: 200px; */
       }
       .pricing-plan {
-        align-items: center;
+        text-align: center;
         background-color: aliceblue;
         border-radius: 3%;
       }
 
+      .plan-title, .plan-price {
+        font-weight: bold;
+      }
+
+      .plan-price {
+        font-size: x-large;
+      }
+      
+      .plan-features {
+        list-style-type: none;
+      }
+
+      .plan-button {
+        color: white;
+        background-color: orangered;
+        border-radius: 7%;
+        border: none;
+        padding: 1.5%
+      }
 
       /* Hint: What can you do with a media query and flexbox? */
       @media (max-width: 1250px) {
