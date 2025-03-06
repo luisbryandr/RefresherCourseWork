@@ -22,11 +22,19 @@
       .pricing-plan {
         align-items: center;
         background-color: aliceblue;
-        border-radius: 3%;  
+        border-radius: 3%;
       }
+
 
       /* Hint: What can you do with a media query and flexbox? */
       @media (max-width: 1250px) {
+        .pricing-container {
+          padding: 1% 25%;
+          display: flex;
+          flex-flow: column;
+          justify-content: space-between;
+          gap: 20px;
+        }
       }
     </style>
   </head>
