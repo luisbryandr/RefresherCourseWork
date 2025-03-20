@@ -1,9 +1,37 @@
 #root {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; */
+    background-color: #161616;
+    color: #f0f0f0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
-   
-
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+#about img {
+    /* width: 100%;
+    height: 100%;
+    object-fit: cover;
+     */
+}
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 2rem;
+    background-image: url('/assets/hero_img_1.JPG'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay color */
+    background-blend-mode: overlay; /* Blends the color with the image */
+    filter: grayscale(100%); /* Converts the background image to black and white */
+    height: 50vh;
+}
