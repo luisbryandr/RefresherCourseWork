@@ -61,7 +61,6 @@
     height: 7rem; /* Adjust size as needed */
 }
 
-
 #about {
     /* display: flex;
     justify-content: space-between;
@@ -93,4 +92,38 @@ filter: grayscale(100%); /* Converts the background image to black and white */
     margin-bottom: 1rem;
     grid-column: 2;
     grid-row: 2;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    padding: 0 2rem;
+}
+
+#projects h2 {
+    font-size: 5.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    grid-column: 3;
+    grid-row: 1 span 2;
+}
+
+.projectscard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f0f0f0; */
+    color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    height: 100%;
+    /* need to come back and style the text links with appropiate size when they are finalized */
+}
+
+.projectscard a {
+    text-decoration: none;
+    color: #f0f0f0;
 }
