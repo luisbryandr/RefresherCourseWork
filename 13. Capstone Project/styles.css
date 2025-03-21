@@ -99,6 +99,7 @@ filter: grayscale(100%); /* Converts the background image to black and white */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr;
     padding: 0 2rem;
+    height: 75vh;
 }
 
 #projects h2 {
@@ -114,7 +115,6 @@ filter: grayscale(100%); /* Converts the background image to black and white */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: #f0f0f0; */
     color: #f0f0f0;
     padding: 1rem;
     border-radius: 1rem;
@@ -126,4 +126,62 @@ filter: grayscale(100%); /* Converts the background image to black and white */
 .projectscard a {
     text-decoration: none;
     color: #f0f0f0;
+}
+
+#skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    padding: 0 2rem;
+    height: 75vh;
+    border: solid 1px red;
+}
+
+#skills h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    border: solid 1px blue;
+    width: 100%;
+}
+
+.skillscard {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    height: 100%;
+    border: solid 1px green;
+    /* need to come back and style the text links with appropiate size when they are finalized */
+}
+
+#press {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0 2rem;
+    height: 75vh;
+}
+
+#press h2 {
+    font-size: 5.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#press p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    grid-column: 2;
+    /* grid-row: 3; */
 }
