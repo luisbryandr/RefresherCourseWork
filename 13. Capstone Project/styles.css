@@ -165,9 +165,10 @@ filter: grayscale(100%); /* Converts the background image to black and white */
 #press {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     padding: 0 2rem;
     height: 75vh;
+    border: solid 1px red;
 }
 
 #press h2 {
@@ -175,13 +176,31 @@ filter: grayscale(100%); /* Converts the background image to black and white */
     font-weight: 700;
     margin-bottom: 1rem;
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 1;
+    border: solid 1px blue;
+}
+
+#presscontainer{
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: space-between;
+    color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    height: 100%;
+    border: solid 1px aquamarine;
+    /* need to come back and style the text links with appropiate size when they are finalized */
 }
 
 #press p {
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 1rem;
-    grid-column: 2;
-    /* grid-row: 3; */
+    align-self: center;
+    /* need to come back and style the text links with appropiate size when they are finalized */
 }
