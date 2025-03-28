@@ -234,7 +234,7 @@ filter: grayscale(100%); /* Converts the background image to black and white */
     padding: 1rem;
     border-radius: 1rem;
     margin: 1rem;
-    height: 100%;
+    height: 50%;
     border: solid 1px aquamarine;
     /* need to come back and style the text links with appropiate size when they are finalized */
 }
@@ -242,6 +242,8 @@ filter: grayscale(100%); /* Converts the background image to black and white */
 #contact a {
     text-decoration: none;
     color: #f0f0f0;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 #contact h3 {
