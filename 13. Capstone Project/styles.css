@@ -1,16 +1,18 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 #root {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0; */
     background-color: #161616;
     color: #f0f0f0;
     width: 100%;
+    min-height: 100vh; /* Ensures it covers at least the viewport height */
     margin: 0;
     padding: 0;
-    height: 100vh;
 }
+
 #hero {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -25,6 +27,7 @@
     grid-column: 1;
     grid-row: 2;
 }
+
 #hero #desc1 {
     font-size: 1.5rem;
     font-weight: 400;
@@ -42,13 +45,16 @@
 }
 
 #hero img {
-    width: 100%;
-    height: 75%;
+    width: 75%;
+    height: 50%;
     object-fit: cover;
     grid-column: 2;
     grid-row: 1 / span 3;
+    margin: 3rem;
+    transform: rotate(10deg);
 }
-#hero a{
+
+#hero a {
     grid-column: 2;
     grid-row: 3;
     text-decoration: none;
@@ -58,14 +64,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 7rem; /* Adjust size as needed */
-    height: 7rem; /* Adjust size as needed */
+    width: 7rem;
+    height: 7rem;
 }
 
 #about {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: flex-end; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -73,21 +76,21 @@
     padding: 0 2rem;
     background-image: url('/assets/hero_img_1.JPG'); 
     background-size: cover; 
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay color */
-    background-blend-mode: overlay; /* Blends the color with the image */
-filter: grayscale(100%); /* Converts the background image to black and white */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
     height: 75vh;
-    border: solid 1px red;
+border: solid 1px red;
 }
+
 #about h2 {
     font-size: 5.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    grid-column:  1;
+    grid-column: 1;
     grid-row: 2;
-    border: solid 1px blue;
+border: solid 1px blue;
 }
 
 #about p {
@@ -96,7 +99,7 @@ filter: grayscale(100%); /* Converts the background image to black and white */
     margin-bottom: 1rem;
     grid-column: 2;
     grid-row: 2;
-    border: solid 1px blue;
+border: solid 1px blue;
     /* height: 20vh; */
 }
 
@@ -126,7 +129,6 @@ filter: grayscale(100%); /* Converts the background image to black and white */
     border-radius: 1rem;
     margin: 1rem;
     height: 100%;
-    /* need to come back and style the text links with appropiate size when they are finalized */
 }
 
 .projectscard a {
@@ -136,11 +138,10 @@ filter: grayscale(100%); /* Converts the background image to black and white */
 
 #skills {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr 3fr;
     padding: 0 2rem;
     height: 75vh;
-    border: solid 1px red;
 }
 
 #skills h2 {
@@ -149,7 +150,6 @@ filter: grayscale(100%); /* Converts the background image to black and white */
     margin-bottom: 1rem;
     grid-column: 1 / span 4;
     grid-row: 1;
-    border: solid 1px blue;
     width: 100%;
 }
 
@@ -164,8 +164,6 @@ filter: grayscale(100%); /* Converts the background image to black and white */
     border-radius: 1rem;
     margin: 1rem;
     height: 100%;
-    border: solid 1px green;
-    /* need to come back and style the text links with appropiate size when they are finalized */
 }
 
 #press {
@@ -174,7 +172,6 @@ filter: grayscale(100%); /* Converts the background image to black and white */
     grid-template-rows: 1fr;
     padding: 0 2rem;
     height: 75vh;
-    border: solid 1px red;
 }
 
 #press h2 {
@@ -183,10 +180,9 @@ filter: grayscale(100%); /* Converts the background image to black and white */
     margin-bottom: 1rem;
     grid-column: 1;
     grid-row: 1;
-    border: solid 1px blue;
 }
 
-#presscontainer{
+#presscontainer {
     grid-column: 2;
     grid-row: 1;
     display: flex;
@@ -199,8 +195,6 @@ filter: grayscale(100%); /* Converts the background image to black and white */
     border-radius: 1rem;
     margin: 1rem;
     height: 100%;
-    border: solid 1px aquamarine;
-    /* need to come back and style the text links with appropiate size when they are finalized */
 }
 
 #press p {
@@ -208,7 +202,6 @@ filter: grayscale(100%); /* Converts the background image to black and white */
     font-weight: 400;
     margin-bottom: 1rem;
     align-self: center;
-    /* need to come back and style the text links with appropiate size when they are finalized */
 }
 
 #contact {
@@ -217,7 +210,6 @@ filter: grayscale(100%); /* Converts the background image to black and white */
     grid-template-rows: 1fr 1fr 1fr;
     padding: 0 2rem;
     height: 75vh;
-    border: solid 1px red;
 }
 
 #contact h2 {
@@ -226,7 +218,6 @@ filter: grayscale(100%); /* Converts the background image to black and white */
     margin-bottom: 1rem;
     grid-column: 1;
     grid-row: 1;
-    border: solid 1px blue;
 }
 
 #contactcontainer {
@@ -241,8 +232,6 @@ filter: grayscale(100%); /* Converts the background image to black and white */
     border-radius: 1rem;
     margin: 1rem;
     height: 50%;
-    border: solid 1px aquamarine;
-    /* need to come back and style the text links with appropiate size when they are finalized */
 }
 
 #contact a {
@@ -258,5 +247,4 @@ filter: grayscale(100%); /* Converts the background image to black and white */
     margin-bottom: 1rem;
     grid-column: 1;
     grid-row: 3;
-    border: solid 1px blue;
 }
